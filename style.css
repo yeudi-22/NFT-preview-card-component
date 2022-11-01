@@ -1,0 +1,155 @@
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Soft-blue2: hsla(215, 52%, 70%, 0.192);
+--Cyan: hsl(178, 100%, 50%);
+--Cyan2: hsla(178, 100%, 50%, 0.438);
+--main-BG: hsl(217, 54%, 11%);
+--card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue__line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+--font-1: 'Outfit';
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    height: auto;
+ }
+.main-container{
+    font-family: var(--font-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-BG);
+    
+    height: 100%;
+}
+
+
+
+.card{
+    margin: 3rem 0;
+    width: 375px;
+    height: 600px;
+    background-color: var(--card-BG);
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.image{
+    
+    background-image: url(./images/image-equilibrium.jpg);
+    width: 325px;
+    height: 310px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.eye-image{
+    opacity: 0;
+    background-color: var(--Cyan2);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.eye-image:hover{
+opacity: 1;
+transition-property: opacity, top, left, height;
+transition-duration: .5s, 1s;
+}
+
+
+.title{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--White);
+    font-size: 25px;
+}
+
+.title:hover{
+    color: var(--Cyan);
+}
+
+.description{
+    color: var(--Soft-blue);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+
+.details{
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.time,
+.value{
+    display: flex;
+    gap: .5rem;
+}
+
+.value{
+    font-weight: 600;
+    color: var(--Cyan);
+}
+
+.time{
+    font-weight: 400;
+    color: var(--Soft-blue);
+}
+
+.line{
+    border-top: 1px solid var(--Soft-blue2);
+    margin-top: -.3rem;
+}
+
+.profile{
+    background-image: url(./images/image-avatar.png);
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.footer__card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+
+}
+.creation{
+    color: var(--Soft-blue);
+}
+.creation span{
+    color: var(--White);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
